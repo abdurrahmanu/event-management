@@ -48,7 +48,7 @@
              </div>
           </div>
   
-          <BaseButton text="Buy now" />
+          <AppButton text="Buy now" />
         </div>
       </section>
 

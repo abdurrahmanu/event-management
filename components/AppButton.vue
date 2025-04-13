@@ -4,9 +4,6 @@
 
 <script lang="ts" setup>
 const props = defineProps({
-    text: {
-        type: String,
-        required: true,
-    },
+    text: String
 })
 </script>
