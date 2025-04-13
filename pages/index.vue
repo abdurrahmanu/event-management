@@ -1,5 +1,5 @@
 <template>
-    <MainCover />
+    <LandingPageCover />
     <AllEvents />
     <AllEventsCategories />
 </template>

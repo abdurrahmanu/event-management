@@ -9,10 +9,11 @@ const handleError = () => clearError({ redirect: '/' })
 </script>
 
 <template>
-  <div>
-    <h2>{{ error.statusCode }}</h2>
-    <button @click="handleError">Clear errors</button>
-    <img src="/404.png" alt="">
-    <NuxtLink to="/">Go back Home</NuxtLink>
+  <div class="w-[500px] text-[32px] m-auto font-bold space-y-4">
+    <h2 class="text-center">{{ error.statusCode }}</h2>
+    <img src="/404.png" class="w-[200px]" alt="">
+    <NuxtLink to="">
+      <BaseButton text="Go back home" class="w-[200px] m-auto" />
+    </NuxtLink>
   </div>
 </template>
