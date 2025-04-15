@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div v-if="error.statusCode === 404" class="w-[500px] text-[32px] m-auto flex items-center justify-center text-center font-bold space-y-4">
+  <div v-if="error.statusCode === 404" class="w-[500px] text-[32px] h-screen m-auto flex flex-col items-center justify-center text-center font-bold space-y-4">
     <p class="text-red-400">404</p>
     <p>Page not found</p>
     <NuxtLink to="/">

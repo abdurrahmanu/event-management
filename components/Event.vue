@@ -1,7 +1,7 @@
 <template>
     <div class="max-h-[488px] m-auto lg:m-0 lg:max-w-0 max-w-[400px] min-w-[250px] lg:min-w-full relative shadow-md shadow-gray-300 rounded-[20px]">
         <div class="w-[100%] h-fit">
-            <img :src="event.imageUrl" class="h-[200px] md:h-[240px] w-[100%] inline-block rounded-t-[20px]" width="100%" alt="">
+            <NuxtImg :src="event.imageUrl" class="h-[200px] md:h-[240px] w-[100%] inline-block rounded-t-[20px]" width="100%" alt=""/>
         </div> 
         <div class="p-6 lg:space-y-5 space-y-3">
             <div class="lg:text-[16px] text-[14px]">
@@ -12,7 +12,7 @@
             <NuxtLink :to="goToEvent">
                 <div class="flex items-center cursor-pointer py-[2px] px-2 gap-1 hover:ring w-fit rounded-full">
                     <p class="text-[#432361]">View details</p>
-                    <img src="/arrow-top-right.svg" class="w-3" alt="">
+                    <NuxtImg src="/arrow-top-right.svg" class="w-3" alt=""/>
                 </div>
             </NuxtLink>
         </div>

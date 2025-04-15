@@ -1,7 +1,7 @@
 <template>
   <div class="p-[64px] pt-[170px] pb-[120px] max-w-[1440px] m-auto relative">
     <div class="max-w-[1440px] m-auto w-[100%]">
-      <img :src="imageUrl" alt="" class="rounded-[20px] max-h-[500px] w-full" />
+      <NuxtImg :src="imageUrl" alt="" class="rounded-[20px] max-h-[500px] w-full" />
     </div>
     <div class="py-12 text-[24px] font-medium">{{ title }}</div>
 
@@ -10,20 +10,20 @@
         <div class="text-[16px] font-light space-y-3">
           <div class="flex gap-10 items-center">
             <p class="flex items-center gap-2">
-              <img class="w-6" src="/calendar.svg" alt="">
+              <NuxtImg class="w-6" src="/calendar.svg" alt=""/>
               {{ date }}
             </p>
             <p class="flex items-center gap-2">
-              <img class="w-6" src="/time.svg" alt="">
+              <NuxtImg class="w-6" src="/time.svg" alt=""/>
               {{ time }}
             </p>
           </div>
           <p class="flex items-center gap-2">
-            <img class="w-6" src="/location.svg" alt="">
+            <NuxtImg class="w-6" src="/location_.svg" alt=""/>
             {{ address }}
           </p>
           <p class="flex items-center gap-2">
-            <img class="w-6" src="/user.svg" alt="">
+            <NuxtImg class="w-6" src="/user.svg" alt=""/>
             {{ organizer.name }}
           </p>
         </div>
@@ -56,15 +56,15 @@
         <div class="space-y-6">
           <p class="text-[16px] font-medium">Contact Organizers</p>
           <div class="flex items-center gap-4">
-            <img class="w-8" src="/mail.svg" alt="">
-            <img class="w-8" src="/twitter.svg" alt="">
-            <img class="w-8" src="/insta.svg" alt="">
+            <NuxtImg class="w-8" src="/mail.svg" alt=""/>
+            <NuxtImg class="w-8" src="/twitter.svg" alt=""/>
+            <NuxtImg class="w-8" src="/insta.svg" alt=""/>
           </div>
         </div>
         <div class="space-y-6 pt-14">
           <p class="text-[16px] font-medium">Directions</p>
           <div class="w-full bg-blue-400">
-            <img src="/location.png" class="w-[100%]" alt="">
+            <NuxtImg src="/location.png" class="w-[100%]" alt=""/>
           </div>
         </div>
       </section>
@@ -79,7 +79,3 @@ let id = route.params.id
 const { data: eventsData } = await useFetch(`https://rendezvous-events.onrender.com/events/${id}`)
 const {date, address, author, description, imageUrl, price, title, time, lat, long, category, country, organizer} = eventsData.value.data.event
 </script>
-
-<style>
-
-</style>

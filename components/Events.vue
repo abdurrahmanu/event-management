@@ -5,17 +5,17 @@
                 <p class="text-[32px]">Trending events</p>
                 <div class="items-center cursor-pointer hidden lg:flex rounded-full px-2 hover:ring gap-2">
                     <p @click="viewAll = !viewAll" class="text-[#432361]">{{!viewAll ? 'View all trending events' : 'Show fewer trending events'}}</p>
-                    <img src="/arrow-top-right.svg" class="w-4" alt="">
+                    <NuxtImg src="/arrow-top-right.svg" class="w-4" alt=""/>
                 </div>
             </p>
             <div v-if="events.data" class="lg:grid flex w-fit m-auto lg:grid-cols-1 lg:w-full lg:m-0 lg:grid-cols-2 xl:grid-cols-3 gap-6 place-items-center">
                 <Event class="hidden lg:block" v-for="(event, index) in showData" :event="event" :key="index" />
                 <div class="lg:hidden block w-7 h-7 flex items-center justify-center rounded-full ring hover:gray-400 hover:ring-2">
-                    <img class="w-5" src="/arrow-left.svg" alt="">
+                    <NuxtImg class="w-5" src="/arrow-left.svg" alt=""/>
                 </div>
                 <Event class="lg:hidden block" :event="events.data.allEvents[current]" />
                 <div class="lg:hidden block w-7 h-7 flex items-center justify-center rounded-full ring hover:bg-gray-400 hover:ring-2">
-                    <img class=" w-5" src="/arrow-right.svg" alt="">
+                    <NuxtImg class=" w-5" src="/arrow-right.svg" alt=""/>
                 </div>
             </div>
         </div>

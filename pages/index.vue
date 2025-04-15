@@ -1,7 +1,9 @@
 <template>
     <LandingPageCover />
-    <Events :showAllEvents="showAllEvents"/>
-    <Categories @showAllEvents="showAllEvents = $event" />
+    <ClientOnly >      
+        <Events :showAllEvents="showAllEvents"/>
+        <Categories @showAllEvents="showAllEvents = $event" />
+    </ClientOnly>
 </template>
 
 <script setup>
