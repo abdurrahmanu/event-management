@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#432361] px-[64px]">
+  <div class="bg-[#432361] lg:px-[64px] px-[30px]">
     <div class="flex flex-col lg:space-y-0 sticky bottom-[-100%] space-y-10 lg:flex-row justify-between text-white py-[56px] text-[16px] max-w-[1312px] mx-auto font-normal">
       <div class="max-w-[340px] mx-auto lg:m-0 text-center lg:text-left">
         <p class="text-[32px] font-medium">rendezvous</p>
@@ -17,17 +17,17 @@
         <div class="space-y-4 text-center lg:text-left">
           <p class="font-medium">Company</p>
           <div class="space-y-2">
-            <p class="hover:underline cursor-pointer">About Us</p>
-            <p class="hover:underline cursor-pointer">FAQs</p>
-            <p class="hover:underline cursor-pointer">Careers</p>
-            <p class="hover:underline cursor-pointer">Support</p>
+            <p class="hover:underline cursor-pointer"><NuxtLink to="/about">About Us</NuxtLink></p>
+            <p class="hover:underline cursor-pointer"><NuxtLink to="/faq">FAQs</NuxtLink></p>
+            <p class="hover:underline cursor-pointer"><NuxtLink to="/">Careers</NuxtLink></p>
+            <p class="hover:underline cursor-pointer"><NuxtLink to="/">Support</NuxtLink></p>
           </div>
         </div>
         <div class="space-y-4 text-center md:text-left">
-          <p class="font-medium cursor-pointer text-center md:text-left">Contact Us</p>
+          <p class="font-medium cursor-pointer text-center lg:text-left">Contact Us</p>
           <div class="max-w-[240px] m-auto lg:m-0 text-center lg:text-left space-y-2">
-            <p class="hover:underline cursor-pointer">info@events.com</p>
-            <p class="hover:underline cursor-pointer">+234 701 345 6789</p>
+            <p class="hover:underline cursor-pointer"><NuxtLink to="/">info@events.com</NuxtLink></p>
+            <p class="hover:underline cursor-pointer"><NuxtLink to="/">+234 701 345 6789</NuxtLink></p>
             <p>Race course, 8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd Lagos Island 102273, Lagos</p>
           </div>
         </div>

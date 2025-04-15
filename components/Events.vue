@@ -1,5 +1,5 @@
 <template>
-    <div v-if="events" class="px-[64px] py-[30px] lg:py-[60px] relative">
+    <div v-if="events" class="md:px-[64px] px-[30px] py-[30px] lg:py-[60px] relative">
         <div class="max-w-[1312px] mx-auto">
             <p class="flex lg:justify-between justify-center items-center pb-[50px]">
                 <p class="text-[32px]">Trending events</p>
@@ -8,11 +8,11 @@
                     <img src="/arrow-top-right.svg" class="w-4" alt="">
                 </div>
             </p>
-            <div v-if="events.data" class="lg:grid flex grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 place-items-center">
+            <div v-if="events.data" class="lg:grid flex w-fit m-auto lg:grid-cols-1 lg:w-full lg:m-0 lg:grid-cols-2 xl:grid-cols-3 gap-6 place-items-center">
                 <Event class="hidden lg:block" v-for="(event, index) in showData" :event="event" :key="index" />
-                <p class="text-[32px] font-black xl:hidden block font-mono" @click="prev"><</p>
+                <p class="text-[32px] font-black lg:hidden block font-mono" @click="prev"><</p>
                 <Event class="lg:hidden block" :event="events.data.allEvents[current]" />
-                <p class="text-[32px] font-black xl:hidden block font-mono" @click="next">></p>
+                <p class="text-[32px] font-black lg:hidden block font-mono" @click="next">></p>
             </div>
         </div>
     </div>
