@@ -1,13 +1,7 @@
 <template>
-    <div>
-        FAQ's
-    </div>
-</template>
-
-<script lang="ts" setup>
-
-</script>
-
-<style>
-
-</style>
+    <div class="min-h-screen text-[40px] font-mono flex flex-col items-justify justify-center text-center bg-white bg-red-600">
+      <h1>FAQ's</h1>
+      <p>Ask questions</p>
+    </div>    
+  </template>
+  

@@ -1,14 +1,6 @@
 <template>
-  <div>
-    <h1>Discover</h1>
-    <p>Discover new events and activities happening around you.</p>
-  </div>
-  </template>
-  
-  <script lang="ts" setup>
-  
-  </script>
-  
-  <style>
-  
-  </style>
+  <div class="min-h-screen text-[40px] font-mono flex flex-col items-justify justify-center text-center bg-white bg-red-600">
+    <h1>Discover more</h1>
+    <p>This is the discover page</p>
+  </div>    
+</template>

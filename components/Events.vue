@@ -10,9 +10,13 @@
             </p>
             <div v-if="events.data" class="lg:grid flex w-fit m-auto lg:grid-cols-1 lg:w-full lg:m-0 lg:grid-cols-2 xl:grid-cols-3 gap-6 place-items-center">
                 <Event class="hidden lg:block" v-for="(event, index) in showData" :event="event" :key="index" />
-                <p class="text-[32px] font-black lg:hidden block font-mono" @click="prev"><</p>
+                <div class="lg:hidden block w-7 h-7 flex items-center justify-center rounded-full ring hover:gray-400 hover:ring-2">
+                    <img class="w-5" src="/arrow-left.svg" alt="">
+                </div>
                 <Event class="lg:hidden block" :event="events.data.allEvents[current]" />
-                <p class="text-[32px] font-black lg:hidden block font-mono" @click="next">></p>
+                <div class="lg:hidden block w-7 h-7 flex items-center justify-center rounded-full ring hover:bg-gray-400 hover:ring-2">
+                    <img class=" w-5" src="/arrow-right.svg" alt="">
+                </div>
             </div>
         </div>
     </div>
