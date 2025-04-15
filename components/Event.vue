@@ -1,5 +1,5 @@
 <template>
-    <div class="max-h-[488px] m-auto lg:m-0 lg:max-w-0 max-w-[400px] min-w-[250px] lg:min-w-full relative shadow-md shadow-gray-300 rounded-[20px]">
+    <div class="max-h-[488px] m-auto lg:m-0 lg:max-w-0 max-w-[400px] min-w-[230px] lg:min-w-full relative shadow-md shadow-gray-300 rounded-[20px]">
         <div class="w-[100%] h-fit">
             <NuxtImg :src="event.imageUrl" class="h-[200px] md:h-[240px] w-[100%] inline-block rounded-t-[20px]" width="100%" alt=""/>
         </div> 
