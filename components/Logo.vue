@@ -1,5 +1,5 @@
 <template>
   <div>
-    <NuxtImg src="/rendezvous.png" alt="" class="scale-80 md:scale-100 -ml-6 md:-ml-0" />
+    <NuxtImg src="/rendezvous.png" alt="" class="xl:w-[200px] w-[140px]" />
   </div>
 </template>
