@@ -1,9 +1,11 @@
 <template>
-    <LandingPageCover />
-    <ClientOnly >      
-        <Events :showAllEvents="showAllEvents"/>
-        <Categories @showAllEvents="showAllEvents = $event" />
-    </ClientOnly>
+    <div class="min-h-[100dvh]">
+        <LandingPageCover />
+        <ClientOnly >      
+            <Events :showAllEvents="showAllEvents"/>
+            <Categories @showAllEvents="showAllEvents = $event" />
+        </ClientOnly>
+    </div>
 </template>
 
 <script setup>
