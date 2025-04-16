@@ -10,11 +10,11 @@
             </p>
             <div v-if="events.data" class="lg:grid flex w-fit m-auto lg:grid-cols-1 lg:w-full lg:m-0 lg:grid-cols-2 xl:grid-cols-3 gap-6 place-items-center">
                 <Event class="hidden lg:block" v-for="(event, index) in showData" :event="event" :key="index" />
-                <div @click="prev" class="lg:hidden block w-7 h-7 flex items-center justify-center rounded-full ring hover:gray-400 hover:ring-2">
+                <div @click="prev" class="lg:hidden block w-7 h-10 flex items-center justify-center rounded-md ring hover:gray-400 hover:ring-2">
                     <NuxtImg class="w-5" src="/arrow-left.svg" alt=""/>
                 </div>
                 <Event class="lg:hidden block" :event="events.data.allEvents[current]" />
-                <div @click="next" class="lg:hidden block w-7 h-7 flex items-center justify-center rounded-full ring hover:bg-gray-400 hover:ring-2">
+                <div @click="next" class="lg:hidden block w-7 h-10 flex items-center justify-center rounded-md ring hover:bg-gray-400 hover:ring-2">
                     <NuxtImg class=" w-5" src="/arrow-right.svg" alt=""/>
                 </div>
             </div>
