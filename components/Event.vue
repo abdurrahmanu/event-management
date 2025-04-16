@@ -1,5 +1,5 @@
 <template>
-    <div class="max-h-[488px] m-auto lg:m-0 md:max-w-[70%] lg:max-w-0 max-w-[80%] min-w-[230px] lg:min-w-full relative shadow-md shadow-gray-300 rounded-[20px]">
+    <div class="max-h-[488px] m-auto lg:m-0 md:max-w-[60%] lg:max-w-0 max-w-[75%] min-w-[230px] lg:min-w-full relative shadow-md shadow-gray-300 rounded-[20px]">
         <div class="w-[100%] h-fit">
             <img :src="event.imageUrl" class="h-[170px] md:h-[240px] w-[100%] inline-block rounded-t-[20px]" width="100%" alt="">
         </div> 

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#432361] xl:px-[64px] px-[20px] md:px-[30px]">
+  <div class="bg-[#432361] xl:px-[64px] px-[30px] md:px-[40px]">
     <div class="flex flex-col lg:space-y-0 sticky bottom-[-100%] space-y-10 lg:flex-row justify-between text-white py-[56px] text-[16px] max-w-[1312px] mx-auto font-normal">
       <div class="max-w-[340px] mx-auto lg:m-0 text-center lg:text-left">
         <p class="text-[32px] font-medium">rendezvous</p>
